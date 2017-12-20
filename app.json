@@ -3,7 +3,7 @@
     "name": "Artika React iOS",
     "slug": "artika-react-ios",
     "description": "A project built with React Native for iOS.",
-    "icon": "./src/assets/img/logo-dark.png",
+    "icon": "./src/assets/img/app-icon.png",
     "sdkVersion": "23.0.0",
     "privacy": "public",
     "platforms": ["ios"],
