@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "react-native-scripts": "1.8.1",
-    "jest-expo": "23.0.0",
+    "jest-expo": "24.0.0",
     "react-test-renderer": "16.0.0"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
@@ -39,9 +39,9 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^23.0.4",
+    "expo": "^24.0.0",
     "react": "16.0.0",
-    "react-native": "0.50.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-24.0.0.tar.gz",
     "react-native-htmlview": "^0.12.1",
     "react-native-render-html": "^3.5.2",
     "react-native-swiper": "^1.5.13",

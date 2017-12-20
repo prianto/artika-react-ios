@@ -4,7 +4,7 @@
     "slug": "artika-react-ios",
     "description": "A project built with React Native for iOS.",
     "icon": "./src/assets/img/app-icon.png",
-    "sdkVersion": "23.0.0",
+    "sdkVersion": "24.0.0",
     "privacy": "public",
     "platforms": ["ios"],
     "githubUrl": "https://github.com/prianto/artika-react-ios",
