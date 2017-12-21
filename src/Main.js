@@ -63,10 +63,6 @@ const Stack = StackNavigator(
     Root: {
       screen: Tab
     },
-    Search: {
-      screen: Search,
-      path: '/search'
-    },
     Category: {
       screen: Category,
       path: '/category'
