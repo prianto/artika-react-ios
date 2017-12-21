@@ -25,7 +25,7 @@ class Features extends Component
         size={26}
         style={{ color: tintColor }} />
     ),
-    tabBarLabel: 'Featuress',
+    tabBarLabel: 'Features',
     header: null
   };
 
