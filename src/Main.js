@@ -19,7 +19,7 @@ const tabNavigation = {
     screen: Welcome,
     path: '/',
   },
-  Latest: {
+  Categories: {
     screen: Categories,
     path: '/categories',
   },
