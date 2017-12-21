@@ -28,7 +28,6 @@ class SingleInfo extends Component
           )}
           dataCenterButton={this.props.navigation.state.params.name} />
           <View style={[styles.wrapper, {backgroundColor: 'white'}]}>
-            <View style={styles.buffer}></View>
             <HTML
               html={Data.info.content}
               classesStyles={classesStyles}

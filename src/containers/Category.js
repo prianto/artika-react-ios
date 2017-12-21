@@ -54,7 +54,7 @@ class Category extends Component
             )}
             dataCenterButton={this.props.navigation.state.params.name}
           />
-          <View style={styles.wrapper}>
+          <View style={[styles.wrapper, styles.wrapperCards]}>
             {this.state.preparedCards}
           </View>
         </ScrollView>

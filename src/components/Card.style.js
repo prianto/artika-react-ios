@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native';
 
-import { vars } from '../common.style';
+import { vars, ss } from '../common.style';
 
 const styles = StyleSheet.create({
   wrapper: {
-    width: vars.windowWidth - (vars.gutter * 2),
+    width: ss ? vars.singleContainerWidth : vars.halfContainerWidth,
+    flex: ss ? null : 1,
     marginBottom: vars.gutter,
     backgroundColor: 'white',
     shadowColor: 'black',
@@ -16,12 +17,11 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1
   },
   wrapperLast: {
-    marginBottom: 0
+    marginBottom: ss ? 0 : vars.gutter
   },
   image: {
-    width: vars.windowWidth - (vars.gutter),
-    height: null,
-    aspectRatio: 16 / 9,
+    width: ss ? vars.singleContainerWidth : vars.halfContainerWidth,
+    height: ss ? vars.singleContainerWidth * 9 / 16 : vars.halfContainerWidth * 9 / 16,
     marginBottom: vars.gutter / 2
   },
   textWrapper: {
@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
   },
   meta: {
     fontSize: vars.meta.fontSize,
+    lineHeight: vars.meta.lineHeight,
     marginBottom: vars.gutter,
     color: vars.text.color.dark
   },

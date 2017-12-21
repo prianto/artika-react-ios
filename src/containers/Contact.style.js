@@ -1,15 +1,9 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, StatusBar } from 'react-native';
 
 import { vars, global } from '../common.style';
 
 const styles = StyleSheet.create({
   ...global,
-  contactScrollView: {
-    marginBottom: 49 - vars.gutter
-  },
-  wrapperContact: {
-    minHeight: vars.windowHeight - (49 + 36 + 12)
-  },
   footer: {
     height: 49,
     backgroundColor: '#F7F7F7',

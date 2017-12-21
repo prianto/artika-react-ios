@@ -54,7 +54,7 @@ class Welcome extends Component
         <ScrollView style={styles.scrollView}>
           <Header />
           <Slider dataNavigation={this.props.navigation} />
-          <View style={styles.wrapper}>
+          <View style={[styles.wrapper, styles.wrapperCards]}>
             {this.state.preparedCards}
           </View>
         </ScrollView>

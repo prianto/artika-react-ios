@@ -53,7 +53,7 @@ class Features extends Component
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
         <ScrollView style={styles.scrollView}>
           <Header />
-          <View style={styles.wrapper}>
+          <View style={[styles.wrapper, styles.wrapperCards]}>
             {this.state.preparedCards}
           </View>
         </ScrollView>

@@ -24,7 +24,7 @@ const articles = [
     author: 'John Doe',
     category: 'Nature & Culture',
     published: '6 days ago',
-    excerpt: 'Morbi blandit tellus maximus, dignissim nunc vel, accumsan ex. Donec condimentum maximus velit vitae dictum. Curabitur sed neque ultrices orci malesuada pharetra.'
+    excerpt: 'Morbi blandit tellus maximus, dignissim nunc vel, accumsan ex. Donec condimentum maximus velit vitae dictum. Curabitur sed neque ultrices orci.'
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const articles = [
     author: 'Johnny Doe',
     category: 'Nature & Culture',
     published: '4 days ago',
-    excerpt: 'Venenatis a non sapien. Duis diam nunc, pretium et mi ac, convallis dictum erat. Quisque ut eros quis libero bibendum varius. Praesent accumsan rutrum feugiat.'
+    excerpt: 'Venenatis a non sapien. Duis diam nunc, pretium et mi ac, convallis dictum erat. Quisque ut eros quis libero bibendum varius.'
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const articles = [
     author: 'Joanna Deep',
     category: 'Nature & Culture',
     published: '2 days ago',
-    excerpt: 'Ut placerat nulla ut odio congue malesuada. Nulla rutrum arcu elit, id interdum nisl posuere non. Sed scelerisque mollis est ut sagittis. Vivamus suscipit.'
+    excerpt: 'Ut placerat nulla ut odio congue malesuada. Nulla rutrum arcu elit, id interdum nisl posuere non. Sed scelerisque mollis est ut sagittis.'
   },
   {
     id: 1,
@@ -83,7 +83,7 @@ const article = {
 };
 
 const info = {
-  content: '<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p><p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p><p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>'
+  content: '<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime.</p><p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt.</p><p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta.</p>'
 };
 
 const Data = {slides, articles, article, info};

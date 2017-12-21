@@ -3,12 +3,19 @@ import { Font } from 'expo';
 
 const wind = Dimensions.get('window');
 
+const gutter = 12;
+
+const ss = (wind.width <= 320) ? true : false;
+
 const vars = {
   light: '#EAE9EF',
   dark: '#495057',
-  gutter: 12,
+  gutter: gutter,
   windowWidth: wind.width,
   windowHeight: wind.height,
+
+  singleContainerWidth: wind.width - (gutter * 2),
+  halfContainerWidth: (wind.width - (gutter * 3)) / 2,
 
   header: {
     icon: {
@@ -27,25 +34,34 @@ const vars = {
     }
   },
 
-  title: {
+  singleTitle: {
     fontSize: 18,
     lineHeight: 26
   },
-  body: {
+  singleBody: {
     fontSize: 18,
     lineHeight: 28
   },
-  excerpt: {
-    fontSize: 16,
-    lineHeight: 24
-  },
-  meta: {
+  singleMeta: {
     fontSize: 11,
     lineHeight: 11
   },
-  caption: {
+  singleCaption: {
     fontSize: 13,
     lineHeight: 20
+  },
+
+  title: {
+    fontSize: ss ? 18 : 16,
+    lineHeight: ss ? 26 : 22
+  },
+  excerpt: {
+    fontSize: ss ? 16 : 14,
+    lineHeight: ss ? 24 : 22
+  },
+  meta: {
+    fontSize: ss ? 11 : 10,
+    lineHeight: ss ? 11 : 20
   }
 }
 
@@ -54,9 +70,15 @@ const global = {
     padding: vars.gutter,
     backgroundColor: vars.light
   },
+  wrapperCards: {
+    flex: ss ? 0 : 1,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    flexWrap: 'wrap'
+  },
   bodyText: {
-    fontSize: vars.body.fontSize,
-    lineHeight: vars.body.lineHeight,
+    fontSize: vars.singleBody.fontSize,
+    lineHeight: vars.singleBody.lineHeight,
     color: vars.text.color.dark
   },
   scrollView: {
@@ -68,4 +90,4 @@ const global = {
   }
 };
 
-export { global, vars };
+export { global, vars, ss };

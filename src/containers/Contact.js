@@ -15,8 +15,8 @@ class Contact extends Component
 
   render () {
     return (
-      <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
-        <ScrollView style={[styles.scrollView, styles.contactScrollView]}>
+      <SafeAreaView style={{flex: 1}} forceInset={{ horizontal: 'always', top: 'always' }}>
+        <ScrollView>
           <Header dataLeftButton={(
               <TouchableOpacity onPress={() => this.props.navigation.goBack(null)}>
                 <Ionicons name={'ios-arrow-back'} style={styles.headerLeftButton} />
