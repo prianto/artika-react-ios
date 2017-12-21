@@ -14,7 +14,7 @@ import Contact from './containers/Contact';
 
 import { vars } from './common.style';
 
-const stackNavigation = {
+const tabNavigation = {
   Home: {
     screen: Welcome,
     path: '/',
@@ -38,7 +38,7 @@ const stackNavigation = {
 }
 
 const Tab = TabNavigator(
-  stackNavigation,
+  tabNavigation,
   {
     tabBarPosition: 'bottom',
     animationEnabled: true,
