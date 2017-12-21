@@ -39,6 +39,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "auth0-js": "^8.12.0",
     "expo": "^24.0.0",
     "react": "16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-24.0.0.tar.gz",
