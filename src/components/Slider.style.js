@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
   text: {
     color: 'white',
     fontSize: vars.title.fontSize,
+    lineHeight: vars.title.lineHeight,
     position: 'absolute',
     bottom: 0,
     left: 0,
