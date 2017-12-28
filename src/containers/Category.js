@@ -45,15 +45,15 @@ class Category extends Component
   render() {
     return (
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
+        <Header
+          dataLeftButton={(
+            <TouchableOpacity onPress={() => this.props.navigation.goBack(null)}>
+              <Ionicons name={'ios-arrow-back'} style={styles.headerLeftButton} />
+            </TouchableOpacity>
+          )}
+          dataCenterButton={this.props.navigation.state.params.name}
+        />
         <ScrollView style={styles.scrollView}>
-          <Header
-            dataLeftButton={(
-              <TouchableOpacity onPress={() => this.props.navigation.goBack(null)}>
-                <Ionicons name={'ios-arrow-back'} style={styles.headerLeftButton} />
-              </TouchableOpacity>
-            )}
-            dataCenterButton={this.props.navigation.state.params.name}
-          />
           <View style={[styles.wrapper, styles.wrapperCards]}>
             {this.state.preparedCards}
           </View>

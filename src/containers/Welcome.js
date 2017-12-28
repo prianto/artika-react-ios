@@ -39,8 +39,7 @@ class Welcome extends Component
           dataTitle={item.title}
           dataLast={index == (arr.length - 1) ? true : false}
           key={item.id}
-          dataOnPress={() => navigate('Article')}
-        >
+          dataOnPress={() => navigate('Article')}>
           {item.excerpt}
         </Card>
       );
@@ -51,8 +50,8 @@ class Welcome extends Component
   render() {
     return (
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
+        <Header />
         <ScrollView style={styles.scrollView}>
-          <Header />
           <Slider dataNavigation={this.props.navigation} />
           <View style={[styles.wrapper, styles.wrapperCards]}>
             {this.state.preparedCards}

@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
     right: 0,
     padding: vars.gutter,
     backgroundColor: 'rgba(0,0,0,0.25)',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    zIndex: 1
   },
   navigatorButton: {
     color: 'rgba(0,0,0,0.25)',

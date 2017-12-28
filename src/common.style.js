@@ -14,6 +14,9 @@ const vars = {
   windowWidth: wind.width,
   windowHeight: wind.height,
 
+  logoSize: 36,
+  statusBarHeight: 20,
+
   singleContainerWidth: wind.width - (gutter * 2),
   halfContainerWidth: (wind.width - (gutter * 3)) / 2,
 
@@ -82,7 +85,9 @@ const global = {
     color: vars.text.color.dark
   },
   scrollView: {
-    backgroundColor: vars.dark
+    // backgroundColor: vars.dark
+    backgroundColor: vars.light,
+    marginTop: vars.logoSize + vars.gutter,
   },
   headerLeftButton: {
     color: 'white',

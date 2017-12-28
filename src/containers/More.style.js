@@ -10,9 +10,9 @@ const styles = StyleSheet.create({
   },
   moreWrapper: {
     backgroundColor: vars.light,
-    borderTopColor: '#999',
+    borderTopColor: '#aaa',
     borderTopWidth: 0.5,
-    borderBottomColor: '#999',
+    borderBottomColor: '#aaa',
     borderBottomWidth: 0.5
   },
   menuItem: {
@@ -33,8 +33,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 6,
-    opacity: 0.5
+    borderRadius: 6
   },
     menuIcon: {
       color: 'white'
@@ -46,7 +45,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     flexDirection: 'row',
-    borderBottomColor: '#999',
+    borderBottomColor: '#aaa',
     borderBottomWidth: 0.5
   },
   nonIconLast: {

@@ -8,13 +8,14 @@ const styles = StyleSheet.create({
     flex: ss ? null : 1,
     marginBottom: vars.gutter,
     backgroundColor: 'white',
+    
     shadowColor: 'black',
     shadowOffset: {
       width: 0,
       height: vars.gutter / 4
     },
     shadowRadius: vars.gutter / 2,
-    shadowOpacity: 0.1
+    shadowOpacity: 0.15
   },
   wrapperLast: {
     marginBottom: ss ? 0 : vars.gutter

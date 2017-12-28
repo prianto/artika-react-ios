@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   ...global,
   wrapper: {
     borderBottomWidth: 0.5,
-    borderBottomColor: '#999',
+    borderBottomColor: '#aaa',
     borderTopWidth: 0.5,
     borderTopColor: 'white',
     paddingBottom: vars.gutter,

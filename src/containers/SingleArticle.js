@@ -19,12 +19,12 @@ class SingleArticle extends Component
   render () {
     return (
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
+        <Header dataLeftButton={(
+          <TouchableOpacity onPress={() => this.props.navigation.goBack(null)}>
+            <Ionicons name={'ios-arrow-back'} style={styles.headerLeftButton} />
+          </TouchableOpacity>
+        )} />
         <ScrollView style={styles.scrollView}>
-          <Header dataLeftButton={(
-            <TouchableOpacity onPress={() => this.props.navigation.goBack(null)}>
-              <Ionicons name={'ios-arrow-back'} style={styles.headerLeftButton} />
-            </TouchableOpacity>
-          )} />
           <View style={[styles.wrapper, {backgroundColor: 'white'}]}>
             <Text style={styles.title}>{Data.article.title}</Text>
             <Text style={styles.meta}>

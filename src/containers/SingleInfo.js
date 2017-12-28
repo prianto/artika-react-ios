@@ -19,14 +19,15 @@ class SingleInfo extends Component
   render () {
     return (
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
-        <ScrollView style={styles.scrollView}>
         <Header
           dataLeftButton={(
             <TouchableOpacity onPress={() => this.props.navigation.goBack(null)}>
               <Ionicons name={'ios-arrow-back'} style={styles.headerLeftButton} />
             </TouchableOpacity>
           )}
-          dataCenterButton={this.props.navigation.state.params.name} />
+          dataCenterButton={this.props.navigation.state.params.name}
+        />
+        <ScrollView style={styles.scrollView}>
           <View style={[styles.wrapper, {backgroundColor: 'white'}]}>
             <HTML
               html={Data.info.content}
@@ -39,5 +40,4 @@ class SingleInfo extends Component
     );
   }
 }
-
 export default SingleInfo;

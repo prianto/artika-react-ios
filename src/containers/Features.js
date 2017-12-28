@@ -51,8 +51,8 @@ class Features extends Component
   render() {
     return (
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
+        <Header />
         <ScrollView style={styles.scrollView}>
-          <Header />
           <View style={[styles.wrapper, styles.wrapperCards]}>
             {this.state.preparedCards}
           </View>

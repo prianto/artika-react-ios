@@ -5,10 +5,11 @@ import { vars, global } from '../common.style';
 const styles = StyleSheet.create({
   ...global,
   searchBoxWrapper: {
-    paddingBottom: 0
+    paddingBottom: 0,
+    backgroundColor: 'white'
   },
   searchBox: {
-    borderColor: '#999',
+    borderColor: '#aaa',
     borderWidth: 0.5,
     backgroundColor: 'white',
     paddingLeft: vars.gutter / 2,

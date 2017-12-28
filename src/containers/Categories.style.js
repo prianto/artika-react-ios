@@ -7,7 +7,15 @@ const styles = StyleSheet.create({
   wrapperCategories: {
     width: vars.windowWidth - (vars.gutter * 2),
     height: (vars.windowWidth - (vars.gutter * 2)) / 3,
-    marginBottom: vars.gutter
+    marginBottom: vars.gutter,
+
+    shadowColor: 'black',
+    shadowOffset: {
+      width: 0,
+      height: vars.gutter / 4
+    },
+    shadowRadius: vars.gutter / 2,
+    shadowOpacity: 0.15
   },
   wrapperCategoriesLast: {
     marginBottom: 0
@@ -16,13 +24,6 @@ const styles = StyleSheet.create({
     width: vars.windowWidth - (vars.gutter * 2),
     height: (vars.windowWidth - (vars.gutter * 2)) / 3,
     marginBottom: vars.gutter,
-    shadowColor: 'black',
-    shadowOffset: {
-      width: 0,
-      height: vars.gutter / 4
-    },
-    shadowRadius: vars.gutter / 2,
-    shadowOpacity: 0.2,
     opacity: 0.75
   },
   banner: {

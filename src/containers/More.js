@@ -40,8 +40,8 @@ class More extends Component {
   render() {
     return (
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
+        <Header />
         <View style={styles.scrollView}>
-          <Header />
           <View style={styles.buffer}></View>
           <View style={styles.moreWrapper}>
             <Button dataNavigation={this.props.navigation} dataScreen="Info" dataName="Privacy Policy" dataIcon="ios-lock" dataLast={null} />

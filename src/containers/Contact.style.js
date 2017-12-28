@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     borderTopWidth: 0.5,
-    borderTopColor: '#999'
+    borderTopColor: '#aaa'
   },
   footerButton: {
     width: '100%',
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     marginBottom: vars.gutter
   },
   input: {
-    borderColor: '#999',
+    borderColor: '#aaa',
     borderWidth: 0.5,
     backgroundColor: 'white',
     paddingLeft: vars.gutter / 2,
