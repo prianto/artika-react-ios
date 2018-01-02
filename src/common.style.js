@@ -86,8 +86,10 @@ const global = {
   },
   scrollView: {
     // backgroundColor: vars.dark
-    backgroundColor: vars.light,
-    marginTop: vars.logoSize + vars.gutter,
+    backgroundColor: vars.light
+  },
+  scrollViewFixed: {
+    marginTop: vars.logoSize + vars.gutter
   },
   headerLeftButton: {
     color: 'white',

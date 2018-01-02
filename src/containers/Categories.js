@@ -39,8 +39,8 @@ class Categories extends Component {
   render() {
     return (
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
-        <Header />
         <ScrollView style={styles.scrollView}>
+          <Header />
           <View style={styles.wrapper}>
             <Banner dataNavigation={this.props.navigation} dataImg={'https://picsum.photos/900/300?image=980'} dataTxt={'Nature'} />
             <Banner dataNavigation={this.props.navigation} dataImg={'https://picsum.photos/900/300?image=904'} dataTxt={'Culture'} />

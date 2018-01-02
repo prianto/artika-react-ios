@@ -6,7 +6,7 @@ import styles from './Header.style';
 class Header extends Component {
   render () {
     return (
-      <View style={styles.header}>
+      <View style={[styles.header, (this.props.dataFixed) ? styles.headerFixed : null ]}>
         <View style={[styles.headerColumn, styles.headerColumnLeft]}>
           {this.props.dataLeftButton}
         </View>

@@ -50,8 +50,8 @@ class Welcome extends Component
   render() {
     return (
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
-        <Header />
         <ScrollView style={styles.scrollView}>
+          <Header />
           <Slider dataNavigation={this.props.navigation} />
           <View style={[styles.wrapper, styles.wrapperCards]}>
             {this.state.preparedCards}

@@ -16,13 +16,16 @@ class Contact extends Component
   render () {
     return (
       <SafeAreaView style={{flex: 1}} forceInset={{ horizontal: 'always', top: 'always' }}>
-        <Header dataLeftButton={(
-          <TouchableOpacity onPress={() => this.props.navigation.goBack(null)}>
-            <Ionicons name={'ios-arrow-back'} style={styles.headerLeftButton} />
-          </TouchableOpacity>
-        )}
-        dataCenterButton='Contact Us' />
-        <ScrollView>
+        <Header
+          dataLeftButton={(
+            <TouchableOpacity onPress={() => this.props.navigation.goBack(null)}>
+              <Ionicons name={'ios-arrow-back'} style={styles.headerLeftButton} />
+            </TouchableOpacity>
+          )}
+          dataCenterButton='Contact Us'
+          dataFixed={true}
+        />
+        <ScrollView style={[styles.scrollView, styles.scrollViewFixed]}>
           <View style={styles.wrapper}>
             <View style={styles.inputWrapper}>
               <TextInput

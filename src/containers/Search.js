@@ -54,8 +54,8 @@ class Search extends Component
   render() {
     return (
       <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
-        <Header />
         <ScrollView style={styles.scrollView}>
+          <Header />
           <View style={[styles.wrapper, styles.searchBoxWrapper]}>
             <TextInput
               style={styles.searchBox}

@@ -26,8 +26,9 @@ class SingleInfo extends Component
             </TouchableOpacity>
           )}
           dataCenterButton={this.props.navigation.state.params.name}
+          dataFixed={true}
         />
-        <ScrollView style={styles.scrollView}>
+        <ScrollView style={[styles.scrollView, styles.scrollViewFixed]}>
           <View style={[styles.wrapper, {backgroundColor: 'white'}]}>
             <HTML
               html={Data.info.content}

@@ -10,8 +10,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: vars.gutter,
     height: vars.logoSize + vars.gutter,
-    backgroundColor: vars.dark,
-
+    backgroundColor: vars.dark
+  },
+  headerFixed: {
     position: 'absolute',
     top: vars.statusBarHeight,
     left: 0,
