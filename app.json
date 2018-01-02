@@ -8,6 +8,11 @@
     "privacy": "public",
     "platforms": ["ios"],
     "githubUrl": "https://github.com/prianto/artika-react-ios",
-    "orientation": "portrait"
+    "orientation": "portrait",
+    "splash": {
+      "image": "./src/assets/img/splash.png",
+      "backgroundColor": "#495057",
+      "resizeMode": "cover"
+    }
   }
 }
