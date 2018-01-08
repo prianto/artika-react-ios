@@ -17,7 +17,15 @@ const styles = StyleSheet.create({
     top: vars.statusBarHeight,
     left: 0,
     right: 0,
-    zIndex: 1
+    zIndex: 1,
+
+    shadowColor: 'black',
+    shadowOffset: {
+      width: 0,
+      height: vars.gutter / 4
+    },
+    shadowRadius: vars.gutter / 2,
+    shadowOpacity: 0.5
   },
   headerColumn: {
   },

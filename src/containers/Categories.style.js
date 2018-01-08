@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
       height: vars.gutter / 4
     },
     shadowRadius: vars.gutter / 2,
-    shadowOpacity: 0.15
+    shadowOpacity: 0.25
   },
   wrapperCategoriesLast: {
     marginBottom: 0
